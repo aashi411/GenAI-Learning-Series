@@ -1,0 +1,15 @@
+# Environment
+.env
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# ChromaDB
+Lesson2_RAG/chroma_db/
+
+#removing large pdf from the learning repo
+Lesson2_RAG/document loaders/deep-learning.pdf

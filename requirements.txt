@@ -1,0 +1,74 @@
+##LESSON 1
+# LangChain
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-openai
+langchain-google-genai
+langchain-mistralai
+langchain_huggingface
+
+#langraph
+langgraph
+
+# Environment Variables
+python-dotenv
+
+# Tokenization
+tiktoken
+
+# Vector Database
+faiss-cpu
+
+# Hugging Face
+transformers
+torch
+torchvision
+torchaudio
+accelerate
+huggingface-hub
+sentence-transformers
+
+# API Development
+fastapi
+uvicorn
+
+# HTTP Requests
+requests
+
+#UI
+streamlit
+
+## LESSON 2 - RAG
+
+# PDF Parsing
+pypdf
+
+# DOCX Support
+python-docx
+
+# HTML Parsing
+beautifulsoup4
+lxml
+
+# Markdown Support
+unstructured
+markdown
+
+# OCR (Optional)
+pytesseract
+pillow
+
+# Advanced Vector Database (Optional)
+chromadb
+langchain-chroma
+
+# Embedding Models
+sentence-transformers
+
+# Environment
+python-dotenv
+
+#Lesson3
+tavily-python
