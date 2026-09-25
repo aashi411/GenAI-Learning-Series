@@ -4,16 +4,16 @@ import streamlit as st
 from langchain_huggingface import HuggingFaceEmbeddings
 #from langchain_openai import OpenAIEmbeddings #we'll use hugging face
 from langchain_chroma import Chroma
-#from langchain_groq import ChatGroq
+from langchain_groq import ChatGroq
 #from langchain_mistralai import ChatMistralAI
-from langchain_ollama import ChatOllama
+#from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 import time
 
 start_time = time.time()
 
-#llm = ChatGroq(model = "openai/gpt-oss-120b", temperature=0.7)
-llm = ChatOllama(model = "gemma3:1b", temperature=0.2)
+llm = ChatGroq(model = "openai/gpt-oss-120b", temperature=0.7)
+#llm = ChatOllama(model = "gemma3:1b", temperature=0.2)
 #prompt template
 prompt= ChatPromptTemplate.from_messages(# from messages bc its easier to define roles there.
     [
