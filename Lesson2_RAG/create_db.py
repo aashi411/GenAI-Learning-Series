@@ -18,7 +18,16 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
+# Local Embedding Model
+# (Uses cached model if already downloaded)
+embedding_model = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
+
 def create_vector_db(pdf_path):
+
+    
+
     # Load PDF
     #loader = PyPDFLoader(r"Lesson2_RAG\document loaders\deep-learning.pdf")
     loader = PyPDFLoader(pdf_path)#for streamlit app
@@ -36,13 +45,9 @@ def create_vector_db(pdf_path):
 
     print(f"Created {len(chunks)} chunks.")
 
-    # Local Embedding Model
-    # (Uses cached model if already downloaded)
-    embedding_model = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
-    )
+    
 
-    # Create Chroma Vector Store
+    # Create and connecting Chroma Vector Store
     vectorstore = Chroma.from_documents(
         documents=chunks,
         embedding=embedding_model,

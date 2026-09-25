@@ -72,3 +72,6 @@ python-dotenv
 
 #Lesson3
 tavily-python
+
+#ollama
+langchain-ollama
